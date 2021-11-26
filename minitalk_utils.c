@@ -16,6 +16,12 @@ void	ft_bzero(void *s, size_t n)//memsetでもできる。
 	}
 }
 
+void	success(int sig)
+{
+	(void)sig;
+	write(1,"Data has been received.\n", 25);
+}
+
 int	main()
 {
 	char test[] = "aaaaaaaaaaaa";
